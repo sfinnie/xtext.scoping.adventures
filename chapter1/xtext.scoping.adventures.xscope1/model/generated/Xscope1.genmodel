@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/xtext.scoping.adventures.xscope1/src-gen" editDirectory="/xtext.scoping.adventures.xscope1.edit/src"
+    editorDirectory="/xtext.scoping.adventures.xscope1.editor/src" modelPluginID="xtext.scoping.adventures.xscope1"
+    forceOverwrite="true" modelName="Xscope1" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="xtext.scoping.adventures.xscope1.edit"
+    editorPluginID="xtext.scoping.adventures.xscope1.editor" runtimeVersion="2.10">
+  <genPackages prefix="Xscope1" basePackage="xtext.scoping.adventures" disposableProviderFactory="true"
+      fileExtensions="xscope1" ecorePackage="Xscope1.ecore#/">
+    <genClasses ecoreClass="Xscope1.ecore#//Program">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Xscope1.ecore#//Program/statements"/>
+    </genClasses>
+    <genClasses ecoreClass="Xscope1.ecore#//Statement"/>
+    <genClasses ecoreClass="Xscope1.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Xscope1.ecore#//Variable/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Xscope1.ecore#//Assignment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Xscope1.ecore#//Assignment/lhs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Xscope1.ecore#//Assignment/rhs"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

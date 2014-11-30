@@ -1,0 +1,19 @@
+grammar xtext.scoping.adventures.Xscope1 with org.eclipse.xtext.common.Terminals
+
+generate xscope1 "http://www.scoping.xtext/adventures/Xscope1"
+
+Program:
+	statements+=Statement*;
+	
+Statement:
+	Variable | Assignment
+
+;
+	
+Variable:
+	'var' name=ID
+;
+
+Assignment:
+	lhs=[Variable] '=' rhs=[Variable]
+;
